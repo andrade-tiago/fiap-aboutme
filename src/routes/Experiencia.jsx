@@ -6,7 +6,7 @@ function Experiencia() {
       <h2>Experiência</h2>
 
       <p>
-        No devido momento não possuo nenhuma experiência trabalhista formal em minha carteira, tendo trabalhado até aqui somente informal como atendente de uma loja e com aventais hospitalares. Estou em busca de um estágio em informática para ter a chance de compartilhar meus conhecimentos e me desenvolver cada vez mais.
+        No devido momento não possuo nenhuma experiência trabalhista formal em minha carteira, tendo trabalhado até aqui somente informal como atendente de uma loja e com aventais hospitalares. Estou em busca de um estágio em informática para ter a chance de compartilhar meus conhecimentos e me desenvolver cada vez mais na área de desenvolvimento web.
       </p>
     </ContentContainer>
   )

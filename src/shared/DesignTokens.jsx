@@ -4,7 +4,9 @@ export const Colors = {
     GRAY: '#767171',
     DARK_GRAY: '#444',
     GOLD: '#BF9000',
-    BLUE: '#2F5597'
+    BLUE: '#2F5597',
+    RED: '#C00000',
+    WHITE: '#FFF'
 }
 
 export const Fonts = {

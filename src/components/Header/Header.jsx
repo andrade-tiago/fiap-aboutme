@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import styled from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 import { Colors, Fonts } from "../../shared/DesignTokens"
 import { Box, Flex } from "reflexbox"
 import { MdWavingHand } from "react-icons/md";
@@ -21,11 +21,15 @@ const Wrapper = styled.header`
                 padding: 10px;
                 display: block;
                 text-decoration: none;
+                border: 1px solid transparent;
+                border-radius: 5px;
+
+                &:hover, &:focus {
+                    color: ${Colors.RED};
+                    border-color: ${Colors.LIGHT_GRAY};
+                    outline: none
+                } 
             }
-
-            &:hover {
-
-            } 
         }
     }
 
@@ -55,32 +59,34 @@ const Photo = styled.div`
 
 function Header() {
     return (
-        <Wrapper>
-            <nav>
-                <ul>
-                    <Link to={'/'}>Home</Link>
-                    <Link to={'/formacao'}>Formação</Link>
-                    <Link to={'/experiencia'}>Experiência</Link>
-                    <Link to={'/hobbies'}>Hobbies</Link>
-                </ul>
-            </nav>
-            <Flex alignItems="center" py={80}>
-                <Flex flexDirection="column" alignItems="center" width={[1, 3/5]}>
-                    <Box fontSize={48} fontFamily={Fonts.SS}>
-                        Olá!{" "}<MdWavingHand />
-                    </Box>
-                    <Box width={1} my={20}><hr /></Box>
-                    <Flex alignItems="center">
-                        <Box fontSize={46} px={20} letterSpacing={2} color={Colors.GRAY}>SOU</Box>
-                        <Box>
-                            <h1>Tiago Andrade</h1>
-                            <Box color={Colors.BLUE} letterSpacing={5} mt={10}>{"<"}WEB_DEVELOPER{" />"}</Box>
+        <>
+            <Wrapper>
+                <nav>
+                    <ul>
+                        <Link to={'/'}>Home</Link>
+                        <Link to={'/formacao'}>Formação</Link>
+                        <Link to={'/experiencia'}>Experiência</Link>
+                        <Link to={'/hobbies'}>Hobbies</Link>
+                    </ul>
+                </nav>
+                <Flex alignItems="center" py={80}>
+                    <Flex flexDirection="column" alignItems="center" width={[1, 3/5]}>
+                        <Box fontSize={48} fontFamily={Fonts.SS}>
+                            Olá!{" "}<MdWavingHand className="hand" />
                         </Box>
+                        <Box width={1} my={20}><hr /></Box>
+                        <Flex alignItems="center">
+                            <Box fontSize={46} px={20} letterSpacing={2} color={Colors.GRAY}>SOU</Box>
+                            <Box>
+                                <h1>Tiago Andrade</h1>
+                                <Box color={Colors.BLUE} letterSpacing={5} mt={10}>{"<"}WEB_DEVELOPER{" />"}</Box>
+                            </Box>
+                        </Flex>
                     </Flex>
+                    <Photo />
                 </Flex>
-                <Photo />
-            </Flex>
-        </Wrapper>
+            </Wrapper>
+        </>
     )
 }
 

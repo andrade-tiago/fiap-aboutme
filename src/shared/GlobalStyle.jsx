@@ -11,7 +11,8 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: ${Fonts.MS};
         color: ${Colors.DARK_GRAY};
-        font-size: 16px
+        font-size: 16px;
+        background: ${Colors.WHITE}
     }
 
     h2 {

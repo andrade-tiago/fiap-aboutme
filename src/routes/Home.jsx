@@ -23,10 +23,14 @@ const Text = styled.p`
 const Button = styled.button`
   padding: 15px;
   background: ${Colors.GOLD};
-  border: 0;
+  border: 2px solid ${Colors.WHITE};
   border-radius: 5px;
   color: ${Colors.BASE_GRAY};
-  cursor: pointer
+  cursor: pointer;
+
+  &:focus {
+    outline: 1px dashed ${Colors.DARK_GRAY}
+  }
 `
 
 function Home() {
