@@ -1,0 +1,28 @@
+{
+    "Principais": [
+        {
+            "nome": "Graduação/Tecnologia em Sistemas para Internet",
+            "escola": "FIAP",
+            "desc": "Desenvolvimento de aplicações voltadas à web",
+            "status": "cursando"
+        },
+        {
+            "nome": "Técnico em Informática Integrado ao Ensino Médio",
+            "escola": "Etec de Francisco Morato/CPS",
+            "desc": "Domínio de aplicações web e servidores"
+        }
+    ],
+    "Complementares": [
+        {
+            "nome": "Aplicações Web com JavaScript",
+            "escola": "Alura",
+            "desc": "DOM, eventos, consumo de APIs, validações (60 horas)",
+            "status": "cursando"
+        },
+        {
+            "nome": "Windows 10 + Office 16",
+            "escola": "Microplus",
+            "desc": "Word, Excel, PowerPoint, Access (128 horas)"
+        }
+    ]
+}

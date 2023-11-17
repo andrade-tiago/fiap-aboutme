@@ -1,0 +1,30 @@
+[
+    {
+        "nome": "Fotografia",
+        "desc": "Com conhecimentos que obtive no técnico, desenvolvi a paixão por fotografar os céus e plantas."
+    },
+    {
+        "nome": "Games",
+        "desc": "Apaixonado por consoles antigos como SNES e PSX."
+    },
+    {
+        "nome": "Música",
+        "desc": "Por um lado, estudar as letras de músicas em inglês. Por outro, a história e as partituras do grandes compositores eruditos, como Beethoven."
+    },
+    {
+        "nome": "Matemática e física",
+        "desc": "Estudar os fundamentos do nosso mundo e desafiar minha mente."
+    },
+    {
+        "nome": "Sudoku e Xadrez",
+        "desc": "Jogos para quebrar a cabeça."
+    },
+    {
+        "nome": "Língua portuguesa, inglesa, comunicação e etimologia",
+        "desc": "A beleza das palavras."
+    },
+    {
+        "nome": "Programação",
+        "desc": "Dar vida a soluções e ideias e automatizar tarefas."
+    }
+]
