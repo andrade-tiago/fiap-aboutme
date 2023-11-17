@@ -44,7 +44,7 @@ const Wrapper = styled.header`
     }
 `
 
-const Photo = styled.div`
+const Photo = styled(Box)`
     border: 10px solid ${Colors.BASE_GRAY};
     outline: 1px solid ${Colors.LIGHT_GRAY};
     width: 100%;
@@ -69,21 +69,21 @@ function Header() {
                         <Link to={'/hobbies'}>Hobbies</Link>
                     </ul>
                 </nav>
-                <Flex alignItems="center" py={80}>
-                    <Flex flexDirection="column" alignItems="center" width={[1, 3/5]}>
+                <Flex alignItems="center" flexDirection={["column", "row"]} py={80}>
+                    <Flex flexDirection="column" alignItems="center" width={[1, 3/5]} my={40} order={[2, 1]}>
                         <Box fontSize={48} fontFamily={Fonts.SS}>
                             Olá!{" "}<MdWavingHand className="hand" />
                         </Box>
                         <Box width={1} my={20}><hr /></Box>
                         <Flex alignItems="center">
-                            <Box fontSize={46} px={20} letterSpacing={2} color={Colors.GRAY}>SOU</Box>
+                            <Box fontSize={46} mr={20} letterSpacing={2} color={Colors.GRAY}>SOU</Box>
                             <Box>
                                 <h1>Tiago Andrade</h1>
                                 <Box color={Colors.BLUE} letterSpacing={5} mt={10}>{"<"}WEB_DEVELOPER{" />"}</Box>
                             </Box>
                         </Flex>
                     </Flex>
-                    <Photo />
+                    <Photo order={[1, 2]} />
                 </Flex>
             </Wrapper>
         </>
