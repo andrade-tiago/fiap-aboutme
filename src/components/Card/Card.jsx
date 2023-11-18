@@ -12,10 +12,6 @@ export const Wrapper = styled(Flex).attrs({
     border-radius: 5px;
     gap: 8px;
 
-    /*h3 {
-        font-size: 20px;
-    }*/
-
     .gold {
         color: ${Colors.GOLD}
     }

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-import styled, { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
 import { Colors, Fonts } from "../../shared/DesignTokens"
 import { Box, Flex } from "reflexbox"
-import { MdWavingHand } from "react-icons/md";
+import { MdWavingHand } from "react-icons/md"
 
 const Wrapper = styled.header`
     background: ${Colors.BASE_GRAY};
@@ -72,7 +72,7 @@ function Header() {
                 <Flex alignItems="center" flexDirection={["column", "row"]} py={80}>
                     <Flex flexDirection="column" alignItems="center" width={[1, 3/5]} my={40} order={[2, 1]}>
                         <Box fontSize={48} fontFamily={Fonts.SS}>
-                            Olá!{" "}<MdWavingHand className="hand" />
+                            Olá!{" "}<MdWavingHand />
                         </Box>
                         <Box width={1} my={20}><hr /></Box>
                         <Flex alignItems="center">

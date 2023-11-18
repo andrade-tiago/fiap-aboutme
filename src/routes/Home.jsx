@@ -12,7 +12,18 @@ const Code = styled.pre`
   margin: 20px 0;
   padding: 10px;
   background: ${Colors.BASE_GRAY};
-  border-radius: 5px
+  border-radius: 5px;
+  animation: brotar 1s;
+  transform: perspective(1000px) rotateY(0deg) rotateX(0);
+
+  @keyframes brotar {
+    0% {
+      transform: perspective(1000px) rotateY(90deg) rotateX(90deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(0deg) rotateX(0);
+    }
+  }
 `
 
 const Text = styled.p`
@@ -61,9 +72,13 @@ function Home() {
       <Text>
         Você pode me convidar no CEP: {CEP} 
       </Text>
-      <Flex justifyContent="center">
-        <Button onClick={handleClick}>Obter detalhes do ViaCEP</Button>
-      </Flex>
+      {
+        !mostrarEndereco && (
+          <Flex justifyContent="center">
+            <Button onClick={handleClick}>Obter detalhes do ViaCEP</Button>
+          </Flex>
+        )
+      }
       {
         mostrarEndereco && (<Code>{cepData}</Code>)
       }
