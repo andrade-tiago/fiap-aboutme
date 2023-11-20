@@ -15,6 +15,9 @@ const Wrapper = styled.header`
 
         ul {
             display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
 
             a {
                 color: ${Colors.DARK_GRAY};
@@ -42,6 +45,12 @@ const Wrapper = styled.header`
         background: none;
         border-bottom: 1px solid ${Colors.LIGHT_GRAY}
     }
+
+    @media (max-width: 350px) {
+        .presentation {
+            flex-direction: column
+        }
+    }
 `
 
 const Photo = styled(Box)`
@@ -63,10 +72,10 @@ function Header() {
             <Wrapper>
                 <nav>
                     <ul>
-                        <Link to={'/'}>Home</Link>
-                        <Link to={'/formacao'}>Formação</Link>
-                        <Link to={'/experiencia'}>Experiência</Link>
-                        <Link to={'/hobbies'}>Hobbies</Link>
+                        <li><Link to={'/'}>Home</Link></li>
+                        <li><Link to={'/formacao'}>Formação</Link></li>
+                        <li><Link to={'/experiencia'}>Experiência</Link></li>
+                        <li><Link to={'/hobbies'}>Hobbies</Link></li>
                     </ul>
                 </nav>
                 <Flex alignItems="center" flexDirection={["column", "row"]} py={80}>
@@ -75,7 +84,7 @@ function Header() {
                             Olá!{" "}<MdWavingHand />
                         </Box>
                         <Box width={1} my={20}><hr /></Box>
-                        <Flex alignItems="center">
+                        <Flex alignItems="center" className="presentation">
                             <Box fontSize={46} mr={20} letterSpacing={2} color={Colors.GRAY}>SOU</Box>
                             <Box>
                                 <h1>Tiago Andrade</h1>

@@ -15,6 +15,7 @@ const Code = styled.pre`
   border-radius: 5px;
   animation: brotar 1s;
   transform: perspective(1000px) rotateY(0deg) rotateX(0);
+  overflow-x: auto;
 
   @keyframes brotar {
     0% {
